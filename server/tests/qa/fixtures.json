@@ -1,0 +1,177 @@
+{
+  "createdAt": "2026-11-12T04:01:11.928Z",
+  "apiBase": "http://localhost:5001",
+  "dbName": "sdas_qa_20261112_1",
+  "departments": {
+    "a": {
+      "id": "6af5399bcb390cdaceee47f2",
+      "name": "Disaster Management",
+      "code": "DM"
+    },
+    "b": {
+      "id": "6af5399acb390cdaceee47e6",
+      "name": "Education",
+      "code": "EDU"
+    }
+  },
+  "grievanceCategory": {
+    "_id": "6af5399dcb390cdaceee4808",
+    "code": "DISASTER",
+    "defaultDepartment": "6af5399bcb390cdaceee47f2",
+    "defaultPriority": "URGENT",
+    "name": "Disaster & Emergency",
+    "parent": null,
+    "requiredEvidence": []
+  },
+  "applicationType": {
+    "_id": "6af539a0cb390cdaceee4838",
+    "code": "BRT",
+    "department": {
+      "_id": "6af5399acb390cdaceee47e4",
+      "code": "HLT",
+      "name": "Health"
+    },
+    "description": "Registration or issuance of a birth certificate.",
+    "formFieldSchema": {
+      "fields": [
+        {
+          "key": "childName",
+          "label": "Child name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "dateOfBirth",
+          "label": "Date of birth",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "placeOfBirth",
+          "label": "Place of birth",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "gender",
+          "label": "Gender",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Male",
+            "Female",
+            "Other"
+          ]
+        }
+      ]
+    },
+    "name": "Birth Certificate",
+    "requiredDocuments": [
+      {
+        "key": "hospital",
+        "label": "Hospital record or birth proof",
+        "required": true
+      }
+    ]
+  },
+  "applicationTypeWithDocs": {
+    "_id": "6af539a0cb390cdaceee4838",
+    "code": "BRT",
+    "department": {
+      "_id": "6af5399acb390cdaceee47e4",
+      "code": "HLT",
+      "name": "Health"
+    },
+    "description": "Registration or issuance of a birth certificate.",
+    "formFieldSchema": {
+      "fields": [
+        {
+          "key": "childName",
+          "label": "Child name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "dateOfBirth",
+          "label": "Date of birth",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "placeOfBirth",
+          "label": "Place of birth",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "gender",
+          "label": "Gender",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Male",
+            "Female",
+            "Other"
+          ]
+        }
+      ]
+    },
+    "name": "Birth Certificate",
+    "requiredDocuments": [
+      {
+        "key": "hospital",
+        "label": "Hospital record or birth proof",
+        "required": true
+      }
+    ]
+  },
+  "fileCategory": {
+    "_id": "6af5399fcb390cdaceee482a",
+    "code": "DIS",
+    "defaultConfidentiality": "CONFIDENTIAL",
+    "defaultDepartment": "6af5399bcb390cdaceee47f2",
+    "name": "Disaster Management Files"
+  },
+  "users": {
+    "citizen": {
+      "id": "6af53a0241c21cfdbec401e1",
+      "role": "CITIZEN",
+      "email": "qa.citizen@sdas.test",
+      "department": null
+    },
+    "clerk": {
+      "id": "6af53a0341c21cfdbec401e4",
+      "role": "CLERK",
+      "email": "qa.clerk@sdas.test",
+      "department": "6af5399bcb390cdaceee47f2"
+    },
+    "officer": {
+      "id": "6af53a0441c21cfdbec401e7",
+      "role": "OFFICER",
+      "email": "qa.officer@sdas.test",
+      "department": "6af5399bcb390cdaceee47f2"
+    },
+    "officerOtherDept": {
+      "id": "6af53a0541c21cfdbec401ea",
+      "role": "OFFICER",
+      "email": "qa.officer2@sdas.test",
+      "department": "6af5399acb390cdaceee47e6"
+    },
+    "deptHead": {
+      "id": "6af53a0641c21cfdbec401ed",
+      "role": "DEPARTMENT_HEAD",
+      "email": "qa.head@sdas.test",
+      "department": "6af5399bcb390cdaceee47f2"
+    },
+    "districtAdmin": {
+      "id": "6af53a0741c21cfdbec401f0",
+      "role": "DISTRICT_ADMIN",
+      "email": "qa.district@sdas.test",
+      "department": "6af5399bcb390cdaceee47f2"
+    }
+  },
+  "admin": {
+    "id": "6af5399958280aff541a4908",
+    "role": "SUPER_ADMIN"
+  }
+}
